@@ -29,9 +29,16 @@ header {
     padding: 0 2rem;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo-img {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 nav a {
@@ -183,5 +190,10 @@ footer {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .logo-img {
+        height: 50px;
+        max-width: 150px;
     }
 }
